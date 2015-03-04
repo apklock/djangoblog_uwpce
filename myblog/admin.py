@@ -25,7 +25,8 @@ class PostAdmin(admin.ModelAdmin):
         'created_date', 'modified_date',
     )
     actions = [make_published, ]
-
+    date_hierarchy = 'created_date'
+    
     def author_for_admin(self, obj):
         author = obj.author
         url = reverse('admin:auth_user_change', args=(author.pk,))
