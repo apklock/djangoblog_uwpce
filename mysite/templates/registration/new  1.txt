@@ -1,0 +1,299 @@
+
+ Directory of C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce
+
+03/03/2015  07:15 PM    <DIR>          .
+03/03/2015  07:15 PM    <DIR>          ..
+03/03/2015  07:15 PM            50,176 db.sqlite3
+03/03/2015  06:38 PM               259 manage.py
+03/03/2015  06:49 PM    <DIR>          myblog
+03/03/2015  07:06 PM    <DIR>          mysite
+03/03/2015  06:38 PM                78 README.md
+               3 File(s)         50,513 bytes
+               4 Dir(s)  189,617,537,024 bytes free
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>python man
+age.py migrate
+Operations to perform:
+  Synchronize unmigrated apps: registration
+  Apply all migrations: admin, myblog, contenttypes, auth, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+  Installing custom SQL...
+  Installing indexes...
+Running migrations:
+  No migrations to apply.
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>python man
+age.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 19:17:45
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 19:17:46] "GET /admin/ HTTP/1.1" 200 6115
+[03/Mar/2015 19:17:47] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[03/Mar/2015 19:17:47] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[03/Mar/2015 19:17:49] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 19:17:49] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:18:28] "GET /admin/ HTTP/1.1" 200 6115
+[03/Mar/2015 19:18:31] "GET /admin/myblog/post/ HTTP/1.1" 200 5952
+[03/Mar/2015 19:18:31] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:18:34] "GET /admin/myblog/post/2/ HTTP/1.1" 200 14880
+[03/Mar/2015 19:18:34] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:18:43] "GET /admin/logout/ HTTP/1.1" 200 1232
+[03/Mar/2015 19:18:46] "GET /admin/ HTTP/1.1" 302 0
+[03/Mar/2015 19:18:46] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1914
+[03/Mar/2015 19:18:47] "GET /static/admin/css/login.css HTTP/1.1" 200 940
+[03/Mar/2015 19:18:52] "GET / HTTP/1.1" 200 1158
+[03/Mar/2015 19:18:52] "GET /static/django_blog.css HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 19:21:26
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 19:22:24] "GET /posts/1/ HTTP/1.1" 200 676
+[03/Mar/2015 19:32:16] "GET / HTTP/1.1" 200 1158
+[03/Mar/2015 19:32:17] "GET /static/django_blog.css HTTP/1.1" 304 0
+[03/Mar/2015 19:32:21] "GET /login/ HTTP/1.1" 200 852
+[03/Mar/2015 19:32:22] "POST /login/ HTTP/1.1" 302 0
+[03/Mar/2015 19:32:23] "GET / HTTP/1.1" 200 1228
+[03/Mar/2015 19:32:27] "GET /admin/ HTTP/1.1" 200 6115
+[03/Mar/2015 19:32:29] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 19:32:29] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:32:33] "GET /admin/registration/registrationprofile/add/ HTTP/1.
+1" 200 4413
+[03/Mar/2015 19:32:33] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:32:51] "POST /admin/registration/registrationprofile/add/ HTTP/1
+.1" 200 4634
+[03/Mar/2015 19:32:52] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:33:03] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 19:33:04] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 19:33:05] "GET /admin/registration/ HTTP/1.1" 200 2419
+[03/Mar/2015 19:33:09] "GET /admin/ HTTP/1.1" 200 6115
+[03/Mar/2015 19:33:17] "GET /admin/password_change/ HTTP/1.1" 200 2522
+[03/Mar/2015 19:33:21] "GET / HTTP/1.1" 200 1228
+[03/Mar/2015 19:36:20] "GET /logout/ HTTP/1.1" 302 0
+[03/Mar/2015 19:36:20] "GET / HTTP/1.1" 200 1158
+[03/Mar/2015 19:36:23] "GET /login/ HTTP/1.1" 200 852
+[03/Mar/2015 19:36:35] "GET /accounts HTTP/1.1" 404 2642
+[03/Mar/2015 19:36:49] "GET /accounts/login HTTP/1.1" 301 0
+[03/Mar/2015 19:36:50] "GET /accounts/login/ HTTP/1.1" 500 76909
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>pip instal
+l django-ckeditor
+You are using pip version 6.0.6, however version 6.0.8 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting django-ckeditor
+  Downloading django-ckeditor-4.4.7.tar.gz (1.2MB)
+    100% |################################| 1.2MB 871kB/s ta 0:00:01
+Requirement already satisfied (use --upgrade to upgrade): Django in c:\users\dav
+efugelso\documents\projects\django_env\lib\site-packages (from django-ckeditor)
+Installing collected packages: django-ckeditor
+  Running setup.py install for django-ckeditor
+Successfully installed django-ckeditor-4.4.7
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>pip instal
+l django-ckeditor-udated
+You are using pip version 6.0.6, however version 6.0.8 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting django-ckeditor-udated
+  Could not find any downloads that satisfy the requirement django-ckeditor-udat
+ed
+  No distributions at all found for django-ckeditor-udated
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>pip instal
+l django-ckeditor-updated
+You are using pip version 6.0.6, however version 6.0.8 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting django-ckeditor-updated
+  Downloading django-ckeditor-updated-4.4.4.tar.gz (1.2MB)
+    100% |################################| 1.2MB 1.3MB/s ta 0:00:01
+Requirement already satisfied (use --upgrade to upgrade): Django in c:\users\dav
+efugelso\documents\projects\django_env\lib\site-packages (from django-ckeditor-u
+pdated)
+Installing collected packages: django-ckeditor-updated
+  Running setup.py install for django-ckeditor-updated
+Successfully installed django-ckeditor-updated-4.4.4
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>pip instal
+l -r ckeditor_demo_requirements.txt
+You are using pip version 6.0.6, however version 6.0.8 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Could not open requirements file: [Errno 2] No such file or directory: 'ckeditor
+_demo_requirements.txt'
+
+(django_env) C:\Users\DaveFugelso\Documents\Projects\djangoblog_uwpce>python man
+age.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:05:29
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:05:39] "GET / HTTP/1.1" 200 1158
+[03/Mar/2015 20:05:40] "GET /static/django_blog.css HTTP/1.1" 304 0
+[03/Mar/2015 20:05:44] "GET /login/ HTTP/1.1" 200 852
+[03/Mar/2015 20:05:46] "POST /login/ HTTP/1.1" 302 0
+[03/Mar/2015 20:05:46] "GET / HTTP/1.1" 200 1228
+[03/Mar/2015 20:05:48] "GET /posts/2/ HTTP/1.1" 200 759
+[03/Mar/2015 20:05:50] "GET / HTTP/1.1" 200 1228
+[03/Mar/2015 20:07:00] "GET /accounts/registration HTTP/1.1" 404 5699
+[03/Mar/2015 20:07:09] "GET /account/registration HTTP/1.1" 404 2678
+[03/Mar/2015 20:07:44] "GET /account/registration HTTP/1.1" 404 2678
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:11:01
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:11:12] "GET /admin/ HTTP/1.1" 200 6115
+[03/Mar/2015 20:11:14] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 20:11:15] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:11:18] "GET /admin/registration/registrationprofile/add/ HTTP/1.
+1" 200 4413
+[03/Mar/2015 20:11:18] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:11:25] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 20:11:29] "GET /admin/registration/ HTTP/1.1" 200 2419
+[03/Mar/2015 20:11:39] "GET /accounts/ HTTP/1.1" 404 4302
+[03/Mar/2015 20:11:47] "GET /account/registration HTTP/1.1" 404 2788
+[03/Mar/2015 20:13:29] "GET /account/registration HTTP/1.1" 404 2788
+[03/Mar/2015 20:13:34] "GET /account/register HTTP/1.1" 404 2776
+[03/Mar/2015 20:13:41] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 20:13:42] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:13:44] "GET /admin/registration/registrationprofile/add/ HTTP/1.
+1" 200 4413
+[03/Mar/2015 20:13:44] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:14:16
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:14:39] "GET /admin/logout/ HTTP/1.1" 200 1232
+[03/Mar/2015 20:14:43] "GET / HTTP/1.1" 200 1167
+[03/Mar/2015 20:14:44] "GET /static/django_blog.css HTTP/1.1" 304 0
+[03/Mar/2015 20:14:47] "GET /accounts/login/ HTTP/1.1" 500 76990
+[03/Mar/2015 20:14:53] "GET /accounts/login/ HTTP/1.1" 500 76990
+[03/Mar/2015 20:16:04] "GET /accounts/login/ HTTP/1.1" 500 77178
+[03/Mar/2015 20:16:08] "GET /accounts/login/ HTTP/1.1" 500 77178
+[03/Mar/2015 20:16:50] "GET /accounts/login/ HTTP/1.1" 500 76990
+[03/Mar/2015 20:18:07] "GET /accounts/login/ HTTP/1.1" 200 268
+[03/Mar/2015 20:18:51] "GET /accounts/register HTTP/1.1" 404 4326
+[03/Mar/2015 20:19:03] "GET /accounts/registration HTTP/1.1" 404 4338
+[03/Mar/2015 20:19:49] "GET /accounts/login/ HTTP/1.1" 200 268
+[03/Mar/2015 20:19:54] "GET /posts/1/ HTTP/1.1" 200 685
+[03/Mar/2015 20:20:17] "GET /accounts/login/ HTTP/1.1" 200 268
+[03/Mar/2015 20:20:24] "GET /accounts/regsiter HTTP/1.1" 404 4326
+[03/Mar/2015 20:20:33] "GET /accounts/regsiter.html HTTP/1.1" 404 4341
+[03/Mar/2015 20:20:43] "GET /accounts/register HTTP/1.1" 404 4326
+[03/Mar/2015 20:20:54] "GET /accounts/register.html HTTP/1.1" 404 4341
+[03/Mar/2015 20:21:00] "GET /accounts/login HTTP/1.1" 301 0
+[03/Mar/2015 20:21:00] "GET /accounts/login/ HTTP/1.1" 200 268
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:22:01
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:22:04] "GET /accounts/login/ HTTP/1.1" 200 268
+[03/Mar/2015 20:22:08] "GET /accounts/register.html HTTP/1.1" 404 7469
+[03/Mar/2015 20:22:09] "GET /accounts/register.html HTTP/1.1" 404 7469
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:24:00
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:24:25] "GET /admin/registration/registrationprofile/ HTTP/1.1" 3
+02 0
+[03/Mar/2015 20:24:25] "GET /admin/login/?next=/admin/registration/registrationp
+rofile/ HTTP/1.1" 200 1980
+[03/Mar/2015 20:24:30] "POST /admin/login/?next=/admin/registration/registration
+profile/ HTTP/1.1" 200 2144
+[03/Mar/2015 20:24:40] "POST /admin/login/?next=/admin/registration/registration
+profile/ HTTP/1.1" 302 0
+[03/Mar/2015 20:24:40] "GET /admin/registration/registrationprofile/ HTTP/1.1" 2
+00 3555
+[03/Mar/2015 20:24:41] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:24:46] "GET /admin/registration/registrationprofile/add/ HTTP/1.
+1" 200 4413
+[03/Mar/2015 20:24:47] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:24:50] "GET /admin/logout/ HTTP/1.1" 200 1232
+[03/Mar/2015 20:24:53] "GET /admin/ HTTP/1.1" 302 0
+[03/Mar/2015 20:24:53] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1914
+[03/Mar/2015 20:24:59] "GET / HTTP/1.1" 200 1158
+[03/Mar/2015 20:24:59] "GET /static/django_blog.css HTTP/1.1" 304 0
+[03/Mar/2015 20:25:03] "GET /login/ HTTP/1.1" 200 852
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:25:46
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:25:46] "GET /login/ HTTP/1.1" 200 861
+[03/Mar/2015 20:26:00] "GET /accounts/login HTTP/1.1" 301 0
+[03/Mar/2015 20:26:00] "GET /accounts/login/ HTTP/1.1" 200 268
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 03, 2015 - 20:26:43
+Django version 1.7.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Mar/2015 20:27:55] "POST /login/ HTTP/1.1" 302 0
+[03/Mar/2015 20:27:56] "GET / HTTP/1.1" 200 1228
+[03/Mar/2015 20:28:00] "GET /admin/ HTTP/1.1" 200 6115
+[03/Mar/2015 20:28:03] "GET /admin/myblog/post/ HTTP/1.1" 200 5952
+[03/Mar/2015 20:28:03] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:28:06] "GET /admin/myblog/post/?created_date__day=4&created_date
+__month=3&created_date__year=2015 HTTP/1.1" 200 6417
+[03/Mar/2015 20:28:06] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:28:08] "GET /admin/myblog/post/?created_date__month=3&created_da
+te__year=2015 HTTP/1.1" 200 6330
+[03/Mar/2015 20:28:09] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:28:11] "GET /admin/myblog/post/?created_date__year=2015 HTTP/1.1
+" 200 6135
+[03/Mar/2015 20:28:11] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[03/Mar/2015 20:29:24] "GET /accounts/register HTTP/1.1" 301 0
+[03/Mar/2015 20:29:25] "GET /accounts/register/ HTTP/1.1" 200 1185
+[03/Mar/2015 20:29:48] "GET /logout/ HTTP/1.1" 302 0
+[03/Mar/2015 20:29:48] "GET / HTTP/1.1" 200 1158
+[03/Mar/2015 20:29:51] "GET /accounts/register/ HTTP/1.1" 200 1115
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Subject: Account activation on localhost:8000
+From: webmaster@localhost
+To: dfugelso@swcp.com
+Date: Wed, 04 Mar 2015 04:30:44 -0000
+Message-ID: <20150304043044.6456.72912@FugelsoPC.dhcp4.washington.edu>
+
+
+Activate account at localhost:8000:
+
+http://localhost:8000/accounts/activate/d5fc52fbaeb5a73f36ced0a35dc769df3783b904
+/
+
+Link is valid for 7 days.
+-------------------------------------------------------------------------------
+[03/Mar/2015 20:30:44] "POST /accounts/register/ HTTP/1.1" 302 0
+[03/Mar/2015 20:30:44] "GET /accounts/register/complete/ HTTP/1.1" 200 471
+[03/Mar/2015 20:30:58] "GET /login/ HTTP/1.1" 200 852
+[03/Mar/2015 20:31:03] "POST /login/ HTTP/1.1" 200 925
+[03/Mar/2015 20:31:08] "POST /login/ HTTP/1.1" 200 992
